@@ -1,0 +1,99 @@
+.logoRight {
+  width: 30px;
+  height: 30px;
+
+}
+
+
+.home {
+
+  transition: trasform 0.5s ease;
+}
+
+.home:hover {
+  transform: scale(1.7);
+  background-color: blue;
+}
+
+.Tv-shows {
+  transition: trasform 0.5s ease;
+}
+
+.Tv-shows:hover {
+  transform: scale(1.4);
+  background-color: red;
+
+}
+
+.Movies {
+  transition: trasform 0.5s ease 2s;
+}
+
+.Movies:hover {
+  transform: scale(1.4);
+  background-color: sandybrown;
+}
+
+.My-list {
+  transition: trasform 0.5s ease;
+}
+
+.My-list:hover {
+  transform: scale(1.4);
+  background-color: pink;
+}
+
+.Recently {
+  transition: trasform 0.5s ease;
+}
+
+.Recently:hover {
+  transform: scale(1.3);
+  background-color: greenyellow;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+
+  font-size: 10px;
+  background: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: #444;
+  border-radius: 20px;
+}
+
+.imgFooter{
+  width: 20px;
+}
+footer{
+  margin-top: 100px;
+}
+.botton-footer {
+  width: 130px;
+
+}

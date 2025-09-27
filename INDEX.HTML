@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NETFLIX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-black">
+    <NAV>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-12">
+                    <div class="navBar d-flex align-items-center p-3 gap-3 text-white text-decoration-none ">
+                        <div class="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+                                alt="netflix" width="120px">
+                        </div>
+                        <ul class="list-unstyled d-flex m-0 p-0 ms-4 d-flex gap-4 ">
+                            <li class="home"><a class="text-decoration-none text-white " href="#">Home</a></li>
+                            <li class="Tv-shows"><a class="text-decoration-none text-white fw-bolder" href="#">TV
+                                    Shows</a></li>
+                            <li class="Movies"><a class="text-decoration-none text-white" href="#">Movies</a></li>
+                            <li class="Recently"><a class="text-decoration-none text-white" href="#">Recently added</a>
+                            </li>
+                            <li class="My-list"><a class="text-decoration-none text-white" href="#">My List</a></li>
+
+                        </ul>
+
+
+                        <div class="navBarRight text-white d-flex align-items-center gap-4 position-absolute end-0 p-3">
+                            <i class="bi bi-search  text-white"></i>
+                            <span><a class="text-decoration-none text-white fw-bolder" href="#">KIDS</a></span>
+                            <i class="bi bi-bell text-white"></i>
+
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img class="logoRight" src="https://picsum.photos/id/1/25/35" alt="">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </NAV>
+    <header>
+        <div class="conteiner-fluid">
+            <div class="d-flex justify-content-between align-items-center ">
+                <div class="title d-flex gap-3 p-3 align-items-center ">
+
+                    <h1 class="text-white fw-bolder">TV Shows</h1>
+                    <div class="dropdown">
+
+                        <button class="btn btn-bg-transparent border border-2 text-white dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                        </button>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="buton me-5">
+                    <button class="btn btn-bg-transparent border border-2 text-white"> <i
+                            class="bi bi-list"></i></button>
+                    <button class="btn btn-bg-transparent border border-2 text-white"> <i class="bi bi-grid-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="conteiner">
+            <div class="row">
+                <div class="title p-4 d-flex gap-2 align-items-center fw-bold">
+
+                    <span class="fs-3">Trending Now</span>
+
+                </div>
+                <div class="col-lg-12">
+                    <div #swiperRef="" class="swiper mySwiper" id="slide">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/2.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/3.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/4.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/5.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/6.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/7.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/8.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/9.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/10.png" alt=""></div>
+
+
+                        </div>
+                        <div class="swiper-button-next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" data-bs-target="#slide"
+                                data-bs-slide="next"></span>
+                            <span class="visually-hidden">Next</span>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" data-bs-target="#slide"
+                                data-bs-slide="prev"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="conteiner">
+            <div class="row">
+                <div class="title p-lg-3 d-flex gap-2 align-items-center fw-bold">
+
+                    <span class="fs-3">Watch It Again</span>
+
+                </div>
+                <div class="col-lg-12">
+                    <div #swiperRef="" class="swiper mySwiper" id="slide">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/11.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/13.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/14.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/15.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/16.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/17.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/8.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/9.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/10.png" alt=""></div>
+
+
+                        </div>
+                        <div class="swiper-button-next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" data-bs-target="#slide"
+                                data-bs-slide="next"></span>
+                            <span class="visually-hidden">Next</span>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" data-bs-target="#slide"
+                                data-bs-slide="prev"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="conteiner">
+            <div class="row">
+                <div class="title p-lg-3 d-flex gap-2 align-items-center fw-bold ">
+
+                    <span class="fs-3">New Releases</span>
+
+                </div>
+                <div class="col-lg-12">
+                    <div #swiperRef="" class="swiper mySwiper" id="slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="img-fluid border border-3 rounded"
+                                    src="./assets/1.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/12.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/3.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/4.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/15.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/16.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/8.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/2.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/11.png" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/10.png" alt=""></div>
+
+
+                        </div>
+                        <div class="swiper-button-next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" data-bs-target="#slide"
+                                data-bs-slide="next"></span>
+                            <span class="visually-hidden">Next</span>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" data-bs-target="#slide"
+                                data-bs-slide="prev"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content d-flex gap-5 justify-content-lg-center align-items-center">
+                        <div class="oneColon d-flex flex-column">
+                            <div class="one-colon d-flex flex-column">
+
+                                <div class="img-fluid d-flex gap-3">
+                                    <img class="imgFooter  " src="./assets/facebook.png" alt="">
+                                    <img class="imgFooter" src="./assets/instagram.png" alt="">
+                                    <img class="imgFooter" src="./assets/twitter.webp" alt="">
+                                    <img class="imgFooter" src="./assets/youtube.webp" alt="">
+                                </div>
+                                <div class="d-flex gap-3 flex-column">
+                                    <span class="mt-5">Audio amd Subtitles</span>
+                                    <span>Media Center</span>
+                                    <span>Privacy</span>
+                                    <span>Contact Us</span>
+                                </div>
+                            </div>
+                            <button class="botton-footer btn btn-bg-trasparent text-white border border-2 mt-3 mb-3">
+                                Service Code</button>
+                            <span class="mb-3">@1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</span>
+                        </div>
+
+
+                        <div class="one-colon d-flex flex-column gap-3 p-3">
+                            <span>Media Center</span>
+                            <span>Privacy</span>
+                            <span>Contact Us</span>
+                        </div>
+                        <div class="one-colon d-flex flex-column gap-3">
+                            <span>Media Center</span>
+                            <span>Privacy</span>
+                            <span>Contact Us</span>
+                        </div>
+                        <div class="one-colon d-flex flex-column gap-3">
+                            <span>Media Center</span>
+                            <span>Privacy</span>
+                            <span>Contact Us</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>
