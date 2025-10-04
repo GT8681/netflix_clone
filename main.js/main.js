@@ -10,6 +10,19 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    // quando la larghezza è 640px
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // quando la larghezza è 1024px
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    }
+  }
+
 });
 
 var appendNumber = 10;
@@ -47,4 +60,7 @@ document
       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
     ]);
+   
   });
+
+  

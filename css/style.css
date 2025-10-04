@@ -97,3 +97,13 @@ footer{
   width: 130px;
 
 }
+
+
+
+/* Stili per schermi più piccoli (es. mobile) */
+@media screen and (max-width: 600px) {
+  footer{
+   
+  }
+  /* Altre regole per adattare il layout */
+}
